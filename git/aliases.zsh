@@ -17,3 +17,6 @@ alias gco='git checkout'
 alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias gri='git rebase -i'
+alias gr='git rebase'
+alias ggui='/usr/local/opt/git/libexec/git-core/git-gui &'
