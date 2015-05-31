@@ -1,18 +1,21 @@
-# holman does dotfiles
+# mario does dotfiles
 
 ## dotfiles
 
 Your dotfiles are how you personalize your system. These are mine.
 
-I was a little tired of having long alias files and everything strewn about
-(which is extremely common on other dotfiles projects, too). That led to this
-project being much more topic-centric. I realized I could split a lot of things
-up into the main areas I used (Ruby, git, system libraries, and so on), so I
-structured the project accordingly.
+Most of the code here was taken from [holman's dotfiles](https://github.com/holman/dotfiles).
+I tuned it according to my preferences. You can [read the original post on
+the subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/). 
 
-If you're interested in the philosophy behind why projects like these are
-awesome, you might want to [read my post on the
-subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
+## my overall setup
+
+While this repo only deals with dotfiles management, it exists to support my development
+environment setup:
++ [iTerm2](http://iterm2.com/)
++ [zsh](http://code.joejag.com/2014/why-zsh.html)
++ [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
++ [tmux](http://aokolish.me/blog/2013/02/12/using-tmux-and-tmuxinator/)
 
 ## install
 
