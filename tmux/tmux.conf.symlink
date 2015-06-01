@@ -29,3 +29,6 @@ bind - split-window -v
 # increase number of lines for history
 set -g history-limit 100000
 
+# Set copy mode with vim keys
+setw -g mode-keys vi
+
