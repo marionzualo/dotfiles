@@ -1,3 +1,5 @@
+source ~/.vimrc-plugins
+
 syntax on
 
 " Wrap gitcommit file types at the appropriate length
