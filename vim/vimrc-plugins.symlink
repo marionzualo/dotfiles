@@ -6,6 +6,7 @@ Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
+Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
 
