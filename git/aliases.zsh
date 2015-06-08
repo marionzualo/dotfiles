@@ -20,3 +20,4 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gri='git rebase -i'
 alias gr='git rebase'
 alias ggui='/usr/local/opt/git/libexec/git-core/git-gui &'
+alias gpf='git push -f origin'
