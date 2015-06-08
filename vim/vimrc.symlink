@@ -20,6 +20,10 @@ set softtabstop=2   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 set shiftwidth=2
 
+" UI config
+set number              " show line numbers
+filetype indent on      " load filetype-specific indent files
+
 " keyboard shortcuts
 let mapleader = ','
 nnoremap <leader>b :CtrlPBuffer<CR>
