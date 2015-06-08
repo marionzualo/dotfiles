@@ -2,6 +2,7 @@ call plug#begin()
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 
