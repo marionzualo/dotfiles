@@ -29,3 +29,5 @@ bind - split-window -v
 # increase number of lines for history
 set -g history-limit 100000
 
+set-option -g allow-rename off
+

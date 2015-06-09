@@ -40,3 +40,5 @@ done
 
 unset config_files
 
+. ~/.nvm/nvm.sh
+

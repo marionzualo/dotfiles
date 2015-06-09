@@ -45,3 +45,4 @@ endif
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
+set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
