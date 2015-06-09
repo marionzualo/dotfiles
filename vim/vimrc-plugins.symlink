@@ -8,6 +8,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-surround'
+Plug 'bling/vim-bufferline'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
