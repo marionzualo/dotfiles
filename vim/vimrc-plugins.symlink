@@ -10,6 +10,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-surround'
 Plug 'bling/vim-bufferline'
 Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 
