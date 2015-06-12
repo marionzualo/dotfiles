@@ -23,6 +23,7 @@ set shiftwidth=2
 " UI config
 set number              " show line numbers
 filetype indent on      " load filetype-specific indent files
+set autoread            " reload files when changed on disk, i.e. via `git checkout`
 
 " keyboard shortcuts
 let mapleader = ','
