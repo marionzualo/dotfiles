@@ -1,6 +1,7 @@
 source ~/.vimrc-plugins
 
 syntax on
+" colorscheme tomorrow-night 
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
@@ -65,3 +66,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Full background themes
+set t_ut=
