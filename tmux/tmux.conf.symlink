@@ -31,3 +31,4 @@ set -g history-limit 100000
 
 set-option -g allow-rename off
 
+set -g default-terminal "screen-256color"
