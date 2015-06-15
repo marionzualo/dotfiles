@@ -1,7 +1,7 @@
 source ~/.vimrc-plugins
 
 syntax on
-" colorscheme tomorrow-night 
+colorscheme tomorrow-night 
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
