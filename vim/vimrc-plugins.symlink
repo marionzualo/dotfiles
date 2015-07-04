@@ -9,8 +9,6 @@ Plug 'rking/ag.vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-surround'
 Plug 'bling/vim-bufferline'
-Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-cucumber'
 
 call plug#end()
