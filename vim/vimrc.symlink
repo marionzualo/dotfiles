@@ -36,6 +36,12 @@ nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>a :Ag<space>
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
+" RSpec.vim mappings
+map <Leader>c :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>e :call RunAllSpecs()<CR>
+
 " easier split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -69,3 +75,6 @@ let g:gitgutter_sign_column_always = 1 " always show sign column for vim
 
 " Full background themes
 set t_ut=
+
+" Set up vim.rspec with Dispatch
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
