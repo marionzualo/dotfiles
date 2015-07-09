@@ -12,6 +12,7 @@ Plug 'bling/vim-bufferline'
 Plug 'tpope/vim-cucumber'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-dispatch'
+Plug 'djoshea/vim-autoread'
 
 call plug#end()
 
