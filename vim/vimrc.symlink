@@ -77,7 +77,7 @@ let g:gitgutter_sign_column_always = 1 " always show sign column for vim
 set t_ut=
 
 " Set up vim.rspec with Dispatch
-let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+let g:rspec_command = "Dispatch bin/rspec {spec}"
 
 " add vim-fugitive to status line
 set statusline=%f
