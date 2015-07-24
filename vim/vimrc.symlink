@@ -1,7 +1,7 @@
 source ~/.vimrc-plugins
 
 syntax on
-colorscheme distinguished 
+colorscheme distinguished
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
@@ -35,6 +35,9 @@ nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>a :Ag<space>
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+" delete file and buffer
+nnoremap <Leader>rm :call delete(expand('%')) \| bdelete! \| :CtrlPClearCache<CR>
 
 " RSpec.vim mappings
 map <Leader>c :call RunCurrentSpecFile()<CR>
@@ -81,5 +84,8 @@ let g:rspec_command = "Dispatch bin/rspec {spec}"
 
 " add vim-fugitive to status line
 set statusline=%f
-set statusline+=\ \  
+set statusline+=\ \
 set statusline+=%{fugitive#statusline()}
+
+" cursor line
+set cursorline
