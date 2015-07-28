@@ -44,5 +44,3 @@ unset config_files
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# configure terminal to use 256 colors
-export TERM=xterm-256color
