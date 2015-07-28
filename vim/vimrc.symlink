@@ -5,7 +5,6 @@ syntax on
 " Color theme
 colorscheme base16-ocean
 set background=dark
-let base16colorspace=256
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
