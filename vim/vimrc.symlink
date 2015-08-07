@@ -11,7 +11,7 @@ set background=dark
 filetype indent plugin on
 
 " Word wrapping
-set wrap
+set nowrap
 set linebreak
 set nolist  " list disables linebreak
 set textwidth=0
