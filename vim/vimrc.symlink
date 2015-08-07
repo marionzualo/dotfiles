@@ -3,6 +3,7 @@ source ~/.vimrc-plugins
 syntax on
 
 " Color theme
+let base16colorspace=256
 colorscheme base16-ocean
 set background=dark
 
