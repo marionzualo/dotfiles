@@ -27,8 +27,18 @@ set shiftwidth=2
 
 " UI config
 set number              " show line numbers
+set relativenumber " the selected line has a line numbers but the other ones have a relative number to this one
 filetype indent on      " load filetype-specific indent files
 set autoread            " reload files when changed on disk, i.e. via `git checkout`
+set cursorline " highlight the current line
+
+" Better search
+set ignorecase
+set smartcase
+set hlsearch
+set showmatch
+set incsearch
+nnoremap <leader><space> :nohlsearch<CR>
 
 " keyboard shortcuts
 let mapleader = ','
@@ -108,6 +118,3 @@ let g:rspec_command = "Dispatch bin/rspec {spec}"
 set statusline=%f
 set statusline+=\ \
 set statusline+=%{fugitive#statusline()}
-
-" cursor line
-set cursorline
