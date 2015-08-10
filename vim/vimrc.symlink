@@ -38,7 +38,7 @@ set smartcase
 set hlsearch
 set showmatch
 set incsearch
-nnoremap <leader><space> :nohl<CR>
+nnoremap <leader>h :nohl<CR>
 
 " keyboard shortcuts
 let mapleader = ','
