@@ -50,6 +50,14 @@ nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>a :Ag<space>
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
+" shortcuts for clipboard copy/paste
+vmap <Leader>y "*y
+nmap <Leader>y "*y
+nmap <Leader>p "*p
+nmap <Leader>P "*P
+vmap <Leader>p "*p
+vmap <Leader>P "*P
+
 " delete file and buffer
 nnoremap <Leader>rm :call delete(expand('%')) \| bdelete! \| :CtrlPClearCache<CR>
 
