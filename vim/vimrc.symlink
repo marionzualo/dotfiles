@@ -38,7 +38,6 @@ set smartcase
 set hlsearch
 set showmatch
 set incsearch
-nnoremap <leader>h :nohl<CR>
 
 " keyboard shortcuts
 let mapleader = ','
@@ -49,6 +48,8 @@ nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>a :Ag<space>
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+nnoremap <leader><space> :nohl<CR>
 
 " shortcuts for clipboard copy/paste
 vmap <Leader>y "*y
