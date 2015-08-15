@@ -38,7 +38,6 @@ set smartcase
 set hlsearch
 set showmatch
 set incsearch
-nnoremap <leader><space> :nohlsearch<CR>
 
 " keyboard shortcuts
 let mapleader = ','
@@ -49,6 +48,22 @@ nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>a :Ag<space>
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+nnoremap <leader><space> :nohl<CR>
+
+" shortcuts for clipboard copy/paste
+vmap <Leader>y "*y
+nmap <Leader>y "*y
+nmap <Leader>p "*p
+nmap <Leader>P "*P
+vmap <Leader>p "*p
+vmap <Leader>P "*P
+
+" shortcut for saving file
+nnoremap <Leader>w :w<CR>
+
+" shortcut for deleting all buffers except the current one
+nnoremap <Leader>bo :BufOnly<CR>
 
 " delete file and buffer
 nnoremap <Leader>rm :call delete(expand('%')) \| bdelete! \| :CtrlPClearCache<CR>
