@@ -107,6 +107,11 @@ let g:gitgutter_sign_column_always = 1 " always show sign column for vim
 
 " Syntastic settings
 
+let g:syntastic_mode_map = {
+    \ "mode": "passive",
+    \ "active_filetypes": ["ruby"],
+    \ "passive_filetypes": [] }
+
 " Mark syntax errors with :signs
 let g:syntastic_enable_signs=1
 
