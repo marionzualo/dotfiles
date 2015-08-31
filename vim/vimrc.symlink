@@ -31,6 +31,7 @@ set relativenumber " the selected line has a line numbers but the other ones hav
 filetype indent on      " load filetype-specific indent files
 set autoread            " reload files when changed on disk, i.e. via `git checkout`
 set cursorline " highlight the current line
+set colorcolumn=120 " show line at 120 colors
 
 " Better search
 set ignorecase
