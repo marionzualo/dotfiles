@@ -122,6 +122,7 @@ let g:syntastic_auto_loc_list=1
 " Syntax checkers: https://github.com/scrooloose/syntastic/wiki/Syntax-Checkers
 let g:syntastic_ruby_checkers=['mri']
 let g:syntastic_scss_checkers=['']
+let g:syntastic_hbs_checkers=['']
 
 " Full background themes
 set t_ut=
