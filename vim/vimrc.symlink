@@ -133,3 +133,5 @@ let g:rspec_command = "Dispatch bin/rspec {spec}"
 set statusline=%f
 set statusline+=\ \
 set statusline+=%{fugitive#statusline()}
+" Change bockle default mapping
+let g:blockle_mapping = '<Leader>bl'
