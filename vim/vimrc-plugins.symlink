@@ -20,6 +20,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'danro/rename.vim'
 Plug 'scrooloose/syntastic'
+Plug 'bling/vim-airline'
 
 call plug#end()
 
