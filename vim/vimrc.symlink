@@ -132,3 +132,6 @@ let g:rspec_command = "Dispatch bin/rspec {spec}"
 
 " Change bockle default mapping
 let g:blockle_mapping = '<Leader>bl'
+
+" Make bufferline only print to the Airline command bar
+let g:bufferline_echo = 0
