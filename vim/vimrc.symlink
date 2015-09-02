@@ -136,3 +136,8 @@ let g:blockle_mapping = '<Leader>bl'
 
 " Make bufferline only print to the Airline command bar
 let g:bufferline_echo = 0
+
+" Save .swp files outside the working directory
+set backupdir=~/.vim/backup_files//
+set directory=~/.vim/swap_files//
+set undodir=~/.vim/undo_files//
