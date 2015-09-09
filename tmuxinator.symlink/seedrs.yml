@@ -29,7 +29,10 @@ root: ~/Projects/Seedrs/seedrs
 
 windows:
   - terminals:
+      layout: even-horizontal
+      panes:
+        -
+        -
   - code: vim
   - servers: bundle exec rails s
-  - notes: vim
-    root: ~/Documents/notes
+  - notes: cd ~/Documents/notes && vim
