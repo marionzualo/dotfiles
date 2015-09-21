@@ -151,3 +151,6 @@ nnoremap <leader>f :NERDTreeFind<CR>
 
 " for delete all buffers except the current one
 nnoremap <Leader>bo :BufOnly<CR>
+
+" delete all buffers
+nnoremap <Leader>bn :BufOnly<CR>:bd<CR>
