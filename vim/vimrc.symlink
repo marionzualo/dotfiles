@@ -61,9 +61,6 @@ vmap <Leader>P "*P
 " shortcut for saving file
 nnoremap <Leader>w :w<CR>
 
-" shortcut for deleting all buffers except the current one
-nnoremap <Leader>bo :BufOnly<CR>
-
 " delete file and buffer
 nnoremap <Leader>rm :call delete(expand('%')) \| bdelete! \| :CtrlPClearCache<CR>
 
@@ -149,3 +146,8 @@ set undodir=~/.vim/undo_files//
 let g:NERDTreeWinSize = 60
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
+
+" buffer management
+
+" for delete all buffers except the current one
+nnoremap <Leader>bo :BufOnly<CR>
