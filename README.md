@@ -16,6 +16,7 @@ environment setup:
 + [zsh](http://code.joejag.com/2014/why-zsh.html)
 + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 + [tmux](http://aokolish.me/blog/2013/02/12/using-tmux-and-tmuxinator/)
++ [pick](https://github.com/thoughtbot/pick)
 
 ## install
 
