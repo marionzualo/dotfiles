@@ -42,7 +42,7 @@ set incsearch
 
 " keyboard shortcuts
 let mapleader = ','
-nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>bt :CtrlPBuffer<CR>
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>a :Ag<space>
