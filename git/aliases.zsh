@@ -17,6 +17,7 @@ alias gco='git checkout'
 alias gpb='git checkout $(git branch | cut -c 3- | pick)'
 alias gcb='git copy-branch-name'
 alias gb='git branch'
+alias gdb='git branch -D $(git branch | cut -c 3- | pick)'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gri='git rebase -i'
 alias gr='git rebase'
