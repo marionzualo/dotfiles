@@ -43,8 +43,6 @@ set incsearch
 " keyboard shortcuts
 let mapleader = ','
 nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>d :NERDTreeToggle<CR>
-nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>a :Ag<space>
@@ -147,4 +145,7 @@ set backupdir=~/.vim/backup_files//
 set directory=~/.vim/swap_files//
 set undodir=~/.vim/undo_files//
 
+" NERDTree customization
 let g:NERDTreeWinSize = 60
+nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
