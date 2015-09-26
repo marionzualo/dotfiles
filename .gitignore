@@ -6,3 +6,4 @@ atom.symlink/storage
 atom.symlink/themes
 *.swp
 git/gitconfig.symlink
+.netrwhist
