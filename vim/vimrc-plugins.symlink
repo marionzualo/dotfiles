@@ -22,6 +22,8 @@ Plug 'danro/rename.vim'
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
 Plug 'jgdavey/vim-blockle'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-easytags'
 
 call plug#end()
 

@@ -162,3 +162,9 @@ nnoremap <Leader>bo :BufOnly<CR>
 
 " delete all buffers
 nnoremap <Leader>bn :BufOnly<CR>:bd<CR>
+
+" ctags
+nnoremap <Leader>gt <C-]>
+nnoremap <Leader>gh :HighlightTags<CR>
+let g:easytags_async = 1
+let g:easytags_auto_highlight = 0
