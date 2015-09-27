@@ -42,9 +42,6 @@ set incsearch
 
 " keyboard shortcuts
 let mapleader = ','
-nnoremap <leader>bt :CtrlPBuffer<CR>
-nnoremap <leader>t :CtrlP<CR>
-nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>a :Ag<space>
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
@@ -190,3 +187,10 @@ augroup END
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
+
+" ctrlp customization
+let g:ctrlp_extensions = ['buffertag']
+nnoremap <leader>bt :CtrlPBuffer<CR>
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
+nnoremap <leader>bs :CtrlPBufTag<CR>
