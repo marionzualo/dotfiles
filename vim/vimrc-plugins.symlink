@@ -25,6 +25,7 @@ Plug 'jgdavey/vim-blockle'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-easytags'
 Plug 'tpope/vim-bundler'
+Plug 'pbrisbin/vim-mkdir'
 
 call plug#end()
 
