@@ -194,3 +194,10 @@ nnoremap <leader>bt :CtrlPBuffer<CR>
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>bs :CtrlPBufTag<CR>
+
+" splits management
+
+" change vertical splits to horizontal
+nnoremap <leader>vh <C-w>t<C-w>K<CR>
+" change hotizontal splits to vertical
+nnoremap <leader>hv <C-w>t<C-w>H<CR>
