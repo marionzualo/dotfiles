@@ -27,6 +27,7 @@ Plug 'xolox/vim-easytags'
 Plug 'tpope/vim-bundler'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'ecomba/vim-ruby-refactoring'
+Plug 'tpope/vim-eunuch'
 
 call plug#end()
 
