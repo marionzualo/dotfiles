@@ -28,6 +28,8 @@ Plug 'tpope/vim-bundler'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-eunuch'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 call plug#end()
 
