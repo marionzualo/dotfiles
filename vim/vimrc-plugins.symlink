@@ -30,6 +30,7 @@ Plug 'ecomba/vim-ruby-refactoring'
 Plug 'tpope/vim-eunuch'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'vim-scripts/vim.ergonomic'
 
 call plug#end()
 
