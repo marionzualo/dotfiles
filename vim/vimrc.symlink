@@ -130,6 +130,7 @@ let g:syntastic_ruby_checkers=['mri']
 let g:syntastic_scss_checkers=['']
 let g:syntastic_hbs_checkers=['']
 
+let g:syntastic_shell = "/bin/sh"
 " Full background themes
 set t_ut=
 
