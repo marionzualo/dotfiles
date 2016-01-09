@@ -1,0 +1,8 @@
+#!/usr/bin/ruby
+
+begin
+  require "awesome_print"
+  AwesomePrint.pry!
+rescue LoadError => e
+  puts e
+end
