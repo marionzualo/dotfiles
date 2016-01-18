@@ -65,10 +65,10 @@ nnoremap <Leader>rm :call delete(expand('%')) \| bdelete! \| :CtrlPClearCache<CR
 nnoremap <Leader>fw :FixWhitespace<CR>
 
 " RSpec.vim mappings
-map <Leader>c :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>e :call RunAllSpecs()<CR>
+map <Leader>sc :call RunCurrentSpecFile()<CR>
+map <Leader>ss :call RunNearestSpec()<CR>
+map <Leader>sl :call RunLastSpec()<CR>
+map <Leader>se :call RunAllSpecs()<CR>
 
 " easier split navigation
 nnoremap <C-J> <C-W><C-J>
