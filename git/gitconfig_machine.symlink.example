@@ -1,0 +1,7 @@
+# Sample gitconfig for current machine
+# It gathers configuration that is specific to a given machine (e.g. user information)
+# This information is not supposed to be tracked in source control
+
+[user]
+        name = AUTHORNAME
+        email = AUTHOREMAIL

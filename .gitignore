@@ -5,7 +5,7 @@ atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
 *.swp
-git/gitconfig.symlink
+git/gitconfig_machine.symlink
 .netrwhist
 *.log
 *.apmrc

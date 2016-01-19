@@ -1,13 +1,9 @@
-# Sample gitconfig
-#
-
 [hub]
         protocol = https
-[user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+[include]
+        path = ~/.gitconfig_machine
 [credential]
-        helper = GIT_CREDENTIAL_HELPER
+        helper = osxkeychain
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
@@ -36,3 +32,12 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+[rebase]
+        autostash = true
+        autosquash = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
