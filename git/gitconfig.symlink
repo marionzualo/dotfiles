@@ -10,6 +10,16 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+        dl      = !$ZSH/bin/git-up
+        tree    = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+        pf      =  push -f origin
+        ri      = rebase -i
+        r       = rebase
+        c       = commit
+        s       = status -sb
+        ca      = commit --amend -C HEAD
+        ul      = push origin HEAD
+        br      = branch
 [color]
         diff = auto
         status = auto
