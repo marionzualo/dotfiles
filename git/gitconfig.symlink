@@ -35,6 +35,8 @@
   browse = !hub browse
   compare = !hub compare
   ci-status = !hub ci-status
+  master = checkout master
+  plr = pull --rebase
 [color]
         diff = auto
         status = auto
