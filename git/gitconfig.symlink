@@ -72,3 +72,10 @@
   user = marionzualo
 [commit]
   template = ~/.gitmessage
+[gitsh]
+	noGreeting = true
+	defaultCommand = status --short --branch
+[gitsh "color"]
+	default = cyan
+	untracked = yellow
+	modified = red
