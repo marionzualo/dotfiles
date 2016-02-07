@@ -67,3 +67,5 @@
 	prune = true
 [github]
   user = marionzualo
+[commit]
+  template = ~/.gitmessage
