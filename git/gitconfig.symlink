@@ -32,6 +32,9 @@
   sl = log --oneline --decorate --graph -20
   upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
   df = diff --word-diff --color-words
+  browse = !hub browse
+  compare = !hub compare
+  ci-status = !hub ci-status
 [color]
         diff = auto
         status = auto
