@@ -65,3 +65,5 @@
 	trustExitCode = true
 [fetch]
 	prune = true
+[github]
+  user = marionzualo
