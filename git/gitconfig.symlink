@@ -5,22 +5,33 @@
 [credential]
         helper = osxkeychain
 [alias]
-        co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
-        count   = !git shortlog -sn
-        dl      = !$ZSH/bin/git-up
-        tree    = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-        pf      =  push -f origin
-        ri      = rebase -i
-        r       = rebase
-        c       = commit
-        s       = status -sb
-        ca      = commit --amend -C HEAD
-        ul      = push origin HEAD
-        br      = branch
-        la      = config --get-regexp alias
+  co = checkout
+  promote = !$ZSH/bin/git-promote
+  wtf     = !$ZSH/bin/git-wtf
+  rank-contributors = !$ZSH/bin/git-rank-contributors
+  count   = !git shortlog -sn
+  dl      = !$ZSH/bin/git-up
+  sla     = log --oneline --decorate --graph --all -20
+  pf      =  push -f origin
+  ri      = rebase -i
+  r       = rebase
+  c       = commit
+  s       = status -sb
+  ca      = commit --amend
+  ul      = push origin HEAD
+  b       = branch
+  la      = config --get-regexp alias
+  fixup   = commit -a --fixup
+  st      = stash -u
+	glog = log -E -i --grep
+	uncommit = reset --soft HEAD^
+	unstage = reset
+	car = commit --amend --no-edit
+  rc = rebase --continue
+  ra = rebase --abort
+  sl = log --oneline --decorate --graph -20
+  upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
+  df = diff --word-diff --color-words
 [color]
         diff = auto
         status = auto
