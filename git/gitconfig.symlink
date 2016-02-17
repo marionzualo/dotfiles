@@ -21,7 +21,7 @@
   ul      = push origin HEAD
   b       = branch
   la      = config --get-regexp alias
-  fixup   = commit -a --fixup
+  fixup   = commit --fixup
   st      = stash -u
 	glog = log -E -i --grep
 	uncommit = reset --soft HEAD^
