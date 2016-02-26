@@ -1,7 +1,7 @@
-# remap prefix to Control + a
-set -g prefix C-a
+# Ctrl-s prefix key. Default => C-b. Send C-s with repeat option via C-s C-s
+set -g prefix C-s
 unbind C-b
-bind C-a send-prefix
+bind-key -r C-s send-prefix
 
 # Reload tmux.conf with prefix-r
 bind C-r source-file ~/.tmux.conf \; display "Reloaded ~/.tmux.conf"
