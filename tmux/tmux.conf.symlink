@@ -88,3 +88,5 @@ bind-key C-j choose-tree
 bind c new-window -c '#{pane_current_path}'
 
 set-option -g status-keys "emacs"
+
+bind g split-window -h -p 50 'gitsh'
