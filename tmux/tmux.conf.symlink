@@ -64,3 +64,6 @@ bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 
 # Break out sessions from panes
 bind-key C-b send-keys 'tat && exit' 'C-m'
+
+# Kill session
+bind-key K run-shell '(tmux switch-client -l || tmux switch-client -n) && tmux kill-session -t "#S" || tmux kill-session'
