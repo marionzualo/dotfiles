@@ -23,8 +23,8 @@ set -s escape-time 0
 setw -g aggressive-resize on
 
 # Rebinding the pane splitting bindings
-bind | split-window -h
-bind - split-window -v
+bind-key \ split-window -h  -c '#{pane_current_path}'
+bind-key - split-window -v  -c '#{pane_current_path}'
 
 # increase number of lines for history
 set -g history-limit 100000
