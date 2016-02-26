@@ -76,6 +76,7 @@
   user = marionzualo
 [commit]
   template = ~/.gitmessage
+  cleanup = strip
 [gitsh]
 	noGreeting = true
 	defaultCommand = status --short --branch
