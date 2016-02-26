@@ -31,6 +31,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-scripts/vim.ergonomic'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
