@@ -14,6 +14,9 @@ bind ^A select-pane -t :.+
 set -g base-index 1
 set-window-option -g pane-base-index 1
 
+# Renumber windows as they are created and destroyed to keep the window numbers consistent with the count
+set -g renumber-windows on
+
 # Allows for faster key repetition
 set -s escape-time 0
 
