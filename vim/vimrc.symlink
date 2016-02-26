@@ -68,6 +68,8 @@ nnoremap <Leader>fw :FixWhitespace<CR>
 map <Leader>i mmgg=G`m
 
 " RSpec.vim mappings
+let g:rspec_command = "VtrSendCommandToRunner! bin/rspec {spec}"
+
 map <Leader>sc :call RunCurrentSpecFile()<CR>
 map <Leader>ss :call RunNearestSpec()<CR>
 map <Leader>sl :call RunLastSpec()<CR>
@@ -136,9 +138,6 @@ let g:syntastic_hbs_checkers=['']
 let g:syntastic_shell = "/bin/sh"
 " Full background themes
 set t_ut=
-
-" Set up vim.rspec with Dispatch
-let g:rspec_command = "Dispatch bin/rspec {spec}"
 
 " Change bockle default mapping
 let g:blockle_mapping = '<Leader>bl'
