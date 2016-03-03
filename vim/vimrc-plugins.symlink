@@ -35,6 +35,9 @@ Plug 'christoomey/vim-tmux-runner'
 Plug 'guns/vim-clojure-static'
 Plug 'tpope/vim-salve'
 Plug 'tpope/vim-fireplace'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'guns/vim-clojure-highlight'
 
 call plug#end()
 
