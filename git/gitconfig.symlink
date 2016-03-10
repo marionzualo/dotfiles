@@ -47,6 +47,7 @@
   dm = !$ZSH/bin/git-delete-local-merged
   pb = parent-branch-name
   rip = !git ri `git pb` # rebase interactively with parent
+  rim = !git ri master
 [color]
         diff = auto
         status = auto
