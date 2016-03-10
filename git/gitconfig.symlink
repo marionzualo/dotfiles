@@ -6,9 +6,6 @@
         helper = osxkeychain
 [alias]
   co = checkout
-  promote = !$ZSH/bin/git-promote
-  wtf     = !$ZSH/bin/git-wtf
-  rank-contributors = !$ZSH/bin/git-rank-contributors
   count   = !git shortlog -sn
   dl      = !$ZSH/bin/git-up
   sla     = log --oneline --decorate --graph --all -20
