@@ -45,6 +45,8 @@
   track = !git branch -u origin/`git cb` # track current branch
   credit = !$ZSH/bin/git-credit
   dm = !$ZSH/bin/git-delete-local-merged
+  pb = parent-branch-name
+  rip = !git ri `git pb` # rebase interactively with parent
 [color]
         diff = auto
         status = auto
