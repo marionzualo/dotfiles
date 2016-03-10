@@ -44,6 +44,7 @@
   cb = !git rev-parse --abbrev-ref HEAD # current branch
   track = !git branch -u origin/`git cb` # track current branch
   credit = !$ZSH/bin/git-credit
+  dm = !$ZSH/bin/git-delete-local-merged
 [color]
         diff = auto
         status = auto
