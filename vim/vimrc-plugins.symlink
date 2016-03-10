@@ -38,6 +38,9 @@ Plug 'tpope/vim-fireplace'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'guns/vim-clojure-highlight'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'tmhedberg/matchit'
+Plug 'kana/vim-textobj-user'
 
 call plug#end()
 
