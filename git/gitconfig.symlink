@@ -39,6 +39,7 @@
   plr = pull --rebase
   mup = !git checkout master && git pull && git checkout -
   master = checkout master
+  last = checkout -
 [color]
         diff = auto
         status = auto
