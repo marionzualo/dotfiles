@@ -43,7 +43,7 @@
   nuke = !git dlb $1 && git drb $1 # delete remote and local branch
   cb = !git rev-parse --abbrev-ref HEAD # current branch
   track = !git branch -u origin/`git cb` # track current branch
-
+  credit = !$ZSH/bin/git-credit
 [color]
         diff = auto
         status = auto
