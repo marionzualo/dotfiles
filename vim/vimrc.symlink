@@ -237,3 +237,6 @@ autocmd Syntax   clojure RainbowParenthesesLoadBraces
 
 " enable matchit plugin
 runtime macros/matchit.vim
+
+" edit vimrc
+nnoremap <Leader>ev :e ~/.vimrc<CR>
