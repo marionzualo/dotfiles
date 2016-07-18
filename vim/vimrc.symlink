@@ -243,3 +243,7 @@ nnoremap <Leader>ev :e ~/.vimrc<CR>
 
 " place cursor at beginning of line
 nnoremap 0 ^"
+
+" quickly move around big lines
+nnoremap j gj
+nnoremap k gk
