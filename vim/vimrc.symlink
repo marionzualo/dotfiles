@@ -240,3 +240,6 @@ runtime macros/matchit.vim
 
 " edit vimrc
 nnoremap <Leader>ev :e ~/.vimrc<CR>
+
+" place cursor at beginning of line
+nnoremap 0 ^"
