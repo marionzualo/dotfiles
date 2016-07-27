@@ -44,8 +44,7 @@ set incsearch
 let mapleader = ','
 nnoremap <leader>a :Ag!<space>
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
-
-nnoremap <leader><space> :nohl<CR>
+nmap <leader><space> <Plug>(LoupeClearHighlight)
 
 " shortcuts for clipboard copy/paste
 vmap <Leader>y "*y

@@ -43,6 +43,7 @@ Plug 'tmhedberg/matchit'
 Plug 'kana/vim-textobj-user'
 Plug 'skwp/greplace.vim'
 Plug 'danchoi/ruby_bashrockets.vim'
+Plug 'wincent/loupe'
 
 call plug#end()
 
