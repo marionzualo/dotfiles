@@ -200,17 +200,6 @@ nnoremap <leader>vh <C-w>t<C-w>K<CR>
 " change hotizontal splits to vertical
 nnoremap <leader>hv <C-w>t<C-w>H<CR>
 
-" Adds files from quickfix list to arguments list
-command! -nargs=0 -bar Qargs execute 'args ' . QuickfixFilenames()
-function! QuickfixFilenames()
-  " Building a hash ensures we get each buffer only once
-  let buffer_numbers = {}
-  for quickfix_item in getqflist()
-    let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
-  endfor
-  return join(values(buffer_numbers))
-endfunction
-
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
