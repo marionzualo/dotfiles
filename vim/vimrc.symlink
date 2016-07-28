@@ -238,3 +238,7 @@ endfunction
 nnoremap <silent> <Leader>re :call Cycle_numbering()<CR>
 
 let test#strategy = "vtr"
+
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>l :TestLast<CR>
