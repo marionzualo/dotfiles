@@ -236,3 +236,5 @@ endfunction
 " <Leader>r -- Cycle through relativenumber + number, number (only), and no
 " numbering (mnemonic: relative).
 nnoremap <silent> <Leader>re :call Cycle_numbering()<CR>
+
+let test#strategy = "vtr"
