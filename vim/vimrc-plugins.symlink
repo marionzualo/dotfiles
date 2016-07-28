@@ -11,7 +11,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'bling/vim-bufferline'
 Plug 'tpope/vim-cucumber'
-Plug 'thoughtbot/vim-rspec'
 Plug 'djoshea/vim-autoread'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -45,6 +44,7 @@ Plug 'danchoi/ruby_bashrockets.vim'
 Plug 'wincent/loupe'
 Plug 'wincent/terminus'
 Plug 'wincent/ferret'
+Plug 'janko-m/vim-test'
 
 call plug#end()
 

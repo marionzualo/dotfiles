@@ -68,11 +68,6 @@ map <Leader>i mmgg=G`m
 " RSpec.vim mappings
 let g:rspec_command = "VtrSendCommandToRunner! bin/rspec {spec}"
 
-map <Leader>rcs :call RunCurrentSpecFile()<CR>
-map <Leader>rns :call RunNearestSpec()<CR>
-map <Leader>rls :call RunLastSpec()<CR>
-map <Leader>ras :call RunAllSpecs()<CR>
-
 " easier split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
