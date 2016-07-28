@@ -41,10 +41,10 @@ Plug 'guns/vim-clojure-highlight'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'tmhedberg/matchit'
 Plug 'kana/vim-textobj-user'
-Plug 'skwp/greplace.vim'
 Plug 'danchoi/ruby_bashrockets.vim'
 Plug 'wincent/loupe'
 Plug 'wincent/terminus'
+Plug 'wincent/ferret'
 
 call plug#end()
 
