@@ -45,6 +45,7 @@ Plug 'wincent/loupe'
 Plug 'wincent/terminus'
 Plug 'wincent/ferret'
 Plug 'janko-m/vim-test'
+Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
