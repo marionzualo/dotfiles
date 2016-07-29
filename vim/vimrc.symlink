@@ -232,3 +232,6 @@ let test#strategy = "vtr"
 nmap <silent> <localleader>t :TestNearest<CR>
 nmap <silent> <localleader>T :TestFile<CR>
 nmap <silent> <localleader>l :TestLast<CR>
+
+" fix whitespace
+nnoremap <Leader>zz :FixWhitespace<CR>
