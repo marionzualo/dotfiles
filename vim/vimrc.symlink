@@ -57,6 +57,12 @@ vmap <Leader>P "*P
 " shortcut for saving file
 nnoremap <Leader>w :w<CR>
 
+" shortcut for quitting file
+nnoremap <Leader>q :q<CR>
+
+" shortcut for exiting file
+nnoremap <Leader>x :xit<CR>
+
 " indent file
 map <Leader>i mmgg=G`m
 
