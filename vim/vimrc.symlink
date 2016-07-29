@@ -42,6 +42,7 @@ set incsearch
 
 " keyboard shortcuts
 let mapleader = ','
+let maplocalleader = '<space>'
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 nmap <leader><space> <Plug>(LoupeClearHighlight)
 
@@ -135,10 +136,10 @@ nnoremap <leader>d :NERDTreeToggle<CR>
 " buffer management
 
 " for delete all buffers except the current one
-nnoremap <Leader>bo :BufOnly<CR>
+nnoremap <Leader>o :BufOnly<CR>
 
 " delete all buffers
-nnoremap <Leader>bn :BufOnly<CR>:bd<CR>
+nnoremap <Leader>n :BufOnly<CR>:bd<CR>
 
 " ctags
 nnoremap <Leader>gt <C-]>
@@ -170,15 +171,15 @@ nnoremap <leader><leader> <c-^>
 
 " ctrlp customization
 let g:ctrlp_extensions = ['buffertag']
-nnoremap <leader>bf :CtrlPBuffer<CR>
-nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>t :CtrlP<CR>
 
 " splits management
 
 " change vertical splits to horizontal
-nnoremap <leader>vh <C-w>t<C-w>K<CR>
+nnoremap <localleader>vh <C-w>t<C-w>K<CR>
 " change hotizontal splits to vertical
-nnoremap <leader>hv <C-w>t<C-w>H<CR>
+nnoremap <localleader>hv <C-w>t<C-w>H<CR>
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
@@ -228,6 +229,6 @@ nnoremap <silent> <Leader>re :call Cycle_numbering()<CR>
 
 let test#strategy = "vtr"
 
-nmap <silent> <leader>t :TestNearest<CR>
-nmap <silent> <leader>T :TestFile<CR>
-nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <localleader>t :TestNearest<CR>
+nmap <silent> <localleader>T :TestFile<CR>
+nmap <silent> <localleader>l :TestLast<CR>
