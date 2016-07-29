@@ -208,7 +208,7 @@ autocmd Syntax   clojure RainbowParenthesesLoadBraces
 runtime macros/matchit.vim
 
 " edit vimrc
-nnoremap <Leader>ev :e ~/.vimrc<CR>
+nnoremap <Leader>v :e ~/.vimrc<CR>
 
 " place cursor at beginning of line
 nnoremap 0 ^"

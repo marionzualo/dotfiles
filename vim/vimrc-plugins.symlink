@@ -46,6 +46,7 @@ Plug 'wincent/terminus'
 Plug 'wincent/ferret'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-unimpaired'
+Plug 'wincent/scalpel'
 
 call plug#end()
 
