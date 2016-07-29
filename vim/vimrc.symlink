@@ -134,7 +134,6 @@ set undodir=~/.vim/undo_files//
 " NERDTree customization
 let g:NERDTreeWinSize = 60
 nnoremap <leader>d :NERDTreeToggle<CR>
-nnoremap <leader>f :NERDTreeFind<CR>
 
 " buffer management
 
