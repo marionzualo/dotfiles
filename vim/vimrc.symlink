@@ -62,9 +62,6 @@ nnoremap <Leader>fw :FixWhitespace<CR>
 " indent file
 map <Leader>i mmgg=G`m
 
-" RSpec.vim mappings
-let g:rspec_command = "VtrSendCommandToRunner! bin/rspec {spec}"
-
 " easier split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
