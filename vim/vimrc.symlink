@@ -42,7 +42,7 @@ set incsearch
 
 " keyboard shortcuts
 let mapleader = ','
-let maplocalleader = '<space>'
+let maplocalleader = ' '
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 nmap <leader><space> <Plug>(LoupeClearHighlight)
 
