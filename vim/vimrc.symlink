@@ -241,3 +241,7 @@ nmap <silent> <localleader>l :TestLast<CR>
 
 " fix whitespace
 nnoremap <Leader>zz :FixWhitespace<CR>
+"
+" <LocalLeader>c -- Fix (most) syntax highlighting problems in current buffer
+" (mnemonic: coloring).
+nnoremap <silent> <LocalLeader>c :syntax sync fromstart<CR>
