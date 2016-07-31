@@ -269,3 +269,15 @@ cnoremap <C-e> <End>
 
 " focus on he current buffer
 nnoremap <Leader>f :only<CR>
+
+if has('folding')
+  if has('windows')
+    let &fillchars='vert: '           " less cluttered vertical window separators
+  endif
+  set foldmethod=indent               " not as cool as syntax, but faster
+  set foldlevelstart=1               " start folded to force me to learn
+endif
+
+" Toggle fold at current position.
+" (Using s-tab to avoid collision between <tab> and <C-i>).
+nnoremap <s-tab> za
