@@ -275,7 +275,7 @@ if has('folding')
     let &fillchars='vert: '           " less cluttered vertical window separators
   endif
   set foldmethod=indent               " not as cool as syntax, but faster
-  set foldlevelstart=1               " start folded to force me to learn
+  set foldlevelstart=99
 endif
 
 " Toggle fold at current position.
