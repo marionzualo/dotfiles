@@ -48,6 +48,7 @@
   pb = parent-branch-name
   rip = !git ri `git pb` # rebase interactively with parent
   rim = !git ri master
+  tidyup = !git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D
 [color]
         diff = auto
         status = auto
