@@ -47,7 +47,7 @@ Plug 'wincent/ferret'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-unimpaired'
 Plug 'wincent/scalpel'
-Plug 'wincent/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
