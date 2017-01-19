@@ -7,7 +7,7 @@
 [alias]
   co = checkout
   count   = !git shortlog -sn
-  dl      = !$ZSH/bin/git-up
+  dl      = !$DOTFILES_DIR/bin/git-up
   sla     = log --oneline --decorate --graph --all -20
   pf      =  push -f origin
   ri      = rebase -i
@@ -43,8 +43,8 @@
   nuke = !git dlb $1 && git drb $1 # delete remote and local branch
   cb = !git rev-parse --abbrev-ref HEAD # current branch
   track = !git branch -u origin/`git cb` # track current branch
-  credit = !$ZSH/bin/git-credit
-  dm = !$ZSH/bin/git-delete-local-merged
+  credit = !$DOTFILES_DIR/bin/git-credit
+  dm = !$DOTFILES_DIR/bin/git-delete-local-merged
   pb = parent-branch-name
   rip = !git ri `git pb` # rebase interactively with parent
   rim = !git ri master
