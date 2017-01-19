@@ -42,7 +42,7 @@ unset config_files
 
 # NVM
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source $(brew list nvm | grep nvm.sh)
 
 # use emacs style zsh bindings
 bindkey -e
