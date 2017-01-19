@@ -335,3 +335,6 @@ let g:ycm_filetype_blacklist = {
       \   'infolog': 1,
       \   'mail': 1
       \ }"
+
+" force quick fix window to occupy the whole horizontal width
+au FileType qf wincmd J
