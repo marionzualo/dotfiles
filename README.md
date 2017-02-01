@@ -8,6 +8,27 @@ Most of the code here was taken from [holman's dotfiles](https://github.com/holm
 I tuned it according to my preferences. You can [read the original post on
 the subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/). 
 
+## instructions on how to setup this on a clean machine
+ install home-brew
+ - install git  `brew install git`
+ - install zsh `brew install zsh`
+ - install oh-my-zsh
+ - change default shell to zsh
+ - install tmux `brew install tmux`
+ - install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) `brew install zsh-syntax-highlighting`
+ - install node `brew install node` 
+ - install pure - https://github.com/sindresorhus/pure 
+ - install vim `brew install vim`
+ - clone dotfiles repo to the correct location and run `script/bootstrap`
+ - `script/boostrap`
+ - intall exuberant ctags `brew install ctags`
+ - install cmake `brew install make`
+ - Install vim plugins with (:VimPlugged)
+ - compile [YCM](https://valloric.github.io/YouCompleteMe)
+ - remap control key
+ - install source code pro
+ - install the silver searcher `brew install the_silver_searcher`
+
 ## my overall setup
 
 While this repo only deals with dotfiles management, it exists to support my development
