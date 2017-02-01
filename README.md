@@ -28,6 +28,8 @@ the subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
  - remap control key
  - install source code pro
  - install the silver searcher `brew install the_silver_searcher`
+ - install pasteboard `brew install reattach-to-user-namespace`
+ - install gitsh https://github.com/thoughtbot/gitsh
 
 ## my overall setup
 
