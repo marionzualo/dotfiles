@@ -1,2 +1,1 @@
-. `brew --prefix`/etc/profile.d/z.sh
-
+. ~/.oh-my-zsh/plugins/z/z.plugin.zsh
