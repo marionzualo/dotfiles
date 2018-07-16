@@ -1,0 +1,91 @@
+[include]
+        path = ~/.gitc/.gitconfig_machine
+[credential]
+        helper = osxkeychain
+[alias]
+  co = checkout
+  count   = !git shortlog -sn
+  dl      = ~/.gitc/git-up
+  sla     = log --oneline --decorate --graph --all -20
+  pf      =  push -f origin ri      = rebase -i
+  r       = rebase
+  c       = commit
+  s       = status -sb
+  ca      = commit --amend
+  ul      = push origin HEAD
+  b       = branch
+  la      = config --get-regexp alias
+  fixup   = commit --fixup # useful for autosquashing commits
+  st      = stash -u # stash untracked files as well
+	glog = log -E -i --grep
+	uncommit = reset --soft HEAD^
+	unstage = reset
+	car = commit --amend --no-edit
+  rc = rebase --continue
+  ra = rebase --abort
+  sl = log --oneline --decorate --graph -20
+  upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
+  df = diff --word-diff --color-words
+  browse = !hub browse
+  compare = !hub compare
+  ci-status = !hub ci-status
+  master = checkout master
+  plr = pull --rebase
+  mup = !git checkout master && git pull && git checkout - # update master and go back to the current brach
+  master = checkout master
+  last = checkout -
+  nb = checkout -b
+  dlb = branch -D # delete local branch
+  drb = push origin --delete # delete remote branch
+  nuke = !git dlb $1 && git drb $1 # delete remote and local branch
+  cb = !git rev-parse --abbrev-ref HEAD # current branch
+  track = !git branch -u origin/`git cb` # track current branch
+  dm = !~/.gitc/git-delete-local-merged
+  rim = !git ri master
+  tidyup = !git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D # delete all local branches except the master
+  empty = !git commit --allow-empty -m \"empty commit\"
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        excludesfile = ~/.gitc/.gitignore_global
+        editor = vim
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[help]
+        autocorrect = 1
+[push]
+        # See `git help config` (search for push.default)
+        # for more information on different options of the below setting.
+        #
+        # Setting to git 2.0 default to suppress warning message
+        default = simple
+[rebase]
+        autostash = true
+        autosquash = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[fetch]
+	prune = true
+[github]
+  user = marionzualo
+[commit]
+  template = ~/.gitc/.gitmessage
+  cleanup = strip
+[gitsh]
+	noGreeting = true
+	defaultCommand = status --short --branch
+[gitsh "color"]
+	default = cyan
+	untracked = yellow
+	modified = red
