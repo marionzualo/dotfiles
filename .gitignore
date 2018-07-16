@@ -11,4 +11,4 @@ git/gitconfig_machine.symlink
 *.apmrc
 *.swo
 *.swn
-vim/vim.symlink/plugged/
+vim/.vim/plugged/
