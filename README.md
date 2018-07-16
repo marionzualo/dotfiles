@@ -6,31 +6,53 @@ Your dotfiles are how you personalize your system. These are mine.
 
 This started from an adaptation of [holman's dotfiles](https://github.com/holman/dotfiles).
 
-Now I am on the 2nd generation so I changed the approach completely to something more similar to xero's [dotfiles](https://github.com/xero/dotfiles). Basically keeping it super simple and using GNU stow for symlinking files.
+Now I am on the 2nd generation so I changed the approach completely to something more similar to xero's [dotfiles](https://github.com/xero/dotfiles).
+Basically keeping it super simple and using GNU stow for symlinking files.
 
 ## instructions on how to setup this on a clean machine
  - install home-brew
  - install git  `brew install git`
  - install zsh `brew install zsh`
  - install oh-my-zsh
- - change default shell to zsh
+ - change default shell to zsh (this is likely going to be handed by oh-my-zsh)
  - install tmux `brew install tmux`
  - install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) `brew install zsh-syntax-highlighting`
- - install node `brew install node` 
- - install pure - https://github.com/sindresorhus/pure 
+ - install node `brew install node`
+ - install pure - https://github.com/sindresorhus/pure
  - install vim `brew install vim`
  - install vim `brew install nvim`
- - clone dotfiles repo to the correct location and run `script/bootstrap`
- - `script/boostrap`
  - intall exuberant ctags `brew install ctags`
- - install cmake `brew install make`
  - Install vim plugins with (:VimPlugged)
- - compile [YCM](https://valloric.github.io/YouCompleteMe)
  - remap control key
  - install source code pro
  - install the silver searcher `brew install the_silver_searcher`
  - install pasteboard `brew install reattach-to-user-namespace`
  - install gitsh https://github.com/thoughtbot/gitsh
+ - install GNU stow
+
+
+## stow instructions
+This is mostly copied from xero's dotfiles. Mostly so I can have a quick reminder on how stow works.
+
+by default the stow command will create symlinks for files in the parent directory of where you execute the command. so my dotfiles setup assumes this repo is located in the root of your home directory `~/dotfiles`. and all stow commands should be executed in that directory. otherwise you'll need to use the `-d` flag with the repo directory location.
+
+to install most of my configs you execute the stow command with the folder name as the only argument.
+
+to install my **herbstluft** theme _greybeard_ use the command:
+
+`stow herbstluftwm`
+
+this will symlink files to `~/.config/herbstluftwm` and various other places.
+
+but you can override the default behavior and symlink files to another location with the `-t` (target) argument flag.
+
+to install the **ryu-login** you need to execute the command:
+
+`stow -t / ryu-login`
+
+this will symlink the file to `/etc/issue`.
+
+**note:** stow can only create a symlink if a config file does not already exist. if a default file was created upon program installation you must delete it first before you can install a new one with stow. this does not apply to directories, only files.
 
 ## my overall setup
 
@@ -42,13 +64,8 @@ environment setup:
 + [tmux](http://aokolish.me/blog/2013/02/12/using-tmux-and-tmuxinator/)
 + [pick](https://github.com/thoughtbot/pick)
 
-## install
-
-TODO 
-
 ## thanks
 
 I forked Zach Holman's excellent [dotfiles](https://github.com/holman/dotfiles) for the first generation of my dotfiles.
 
 The present generation is highly inspired by xero's [dotfiles](https://github.com/xero/dotfiles)
- 
