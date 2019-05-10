@@ -10,6 +10,7 @@ Now I am on the 2nd generation so I changed the approach completely to something
 Basically keeping it super simple and using GNU stow for symlinking files.
 
 ## instructions on how to setup this on a clean machine
+ - clone https://github.com/marionzualo/dotfiles
  - install home-brew
  - install git  `brew install git`
  - install zsh `brew install zsh`
@@ -29,7 +30,13 @@ Basically keeping it super simple and using GNU stow for symlinking files.
  - install pasteboard `brew install reattach-to-user-namespace`
  - install gitsh https://github.com/thoughtbot/gitsh
  - install GNU stow
-
+ - `cd ~/dotfiles; stow vim;`
+ - create `~/dotfiles/git/.gitgc/gitconfig_machine` with local details
+ - `mv ~/.gitconfig ~/.gitconfig.old`
+ - `cd ~/dotfiles; stow git;`
+ - `mv ~/.zshrc ~/.zshrc.old`
+ - `stow zsh`
+ - `stow tmux`
 
 ## stow instructions
 This is mostly copied from xero's dotfiles. Mostly so I can have a quick reminder on how stow works.
