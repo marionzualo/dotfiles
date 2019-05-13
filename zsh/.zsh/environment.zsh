@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/opt/mysql@5.6/bin:$HOME/bin:/usr/local/bin:$PATH
 
 #preferred editor for local and remote sessions
 export EDITOR=vim
