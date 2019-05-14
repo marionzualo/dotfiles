@@ -17,3 +17,5 @@ git
 source $ZSH/oh-my-zsh.sh
 
 for config (~/.zsh/*.zsh) source $config
+
+. ~/.zsh/z.zsh
