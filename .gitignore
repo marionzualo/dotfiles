@@ -12,3 +12,4 @@ git/.gitc/.gitconfig_machine
 *.swo
 *.swn
 vim/.vim/plugged/
+zsh/.zsh/local.zsh
