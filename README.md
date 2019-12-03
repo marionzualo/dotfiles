@@ -23,15 +23,15 @@ Basically keeping it super simple and using GNU stow for symlinking files.
  - install vim `brew install vim`
  - install vim `brew install nvim`
  - intall exuberant ctags `brew install ctags`
- - Install vim plugins with (:VimPlugged)
  - remap control key
- - install source code pro
+ - install source code pro `brew tap homebrew/cask-fonts && brew cask install font-source-code-pro`
  - install the silver searcher `brew install the_silver_searcher`
  - install pasteboard `brew install reattach-to-user-namespace`
  - install gitsh https://github.com/thoughtbot/gitsh
- - install GNU stow
+ - install GNU stow `brew install stow`
  - `cd ~/dotfiles; stow vim;`
- - create `~/dotfiles/git/.gitgc/gitconfig_machine` with local details
+ - Install vim plugins with (:PlugInstall)
+ - create `~/dotfiles/git/.gitgc/.gitconfig_machine` with local details
  - `mv ~/.gitconfig ~/.gitconfig.old`
  - `cd ~/dotfiles; stow git;`
  - `mv ~/.zshrc ~/.zshrc.old`
