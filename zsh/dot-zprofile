@@ -1,0 +1,5 @@
+# macOS starts terminal shells as login shells, so this runs before .zshrc.
+# Keep it focused on environment that should exist for the whole session.
+if [[ -r ~/.zsh/environment.zsh ]]; then
+  source ~/.zsh/environment.zsh
+fi

@@ -1,0 +1,32 @@
+#!/usr/bin/env zsh
+set -euo pipefail
+
+if ! command -v brew >/dev/null 2>&1; then
+  echo "Homebrew is not installed. Install it from https://brew.sh/ and run this script again." >&2
+  exit 1
+fi
+
+formulae=(
+  aube
+  gh
+  git
+  mise
+  neovim
+  node
+  pure
+  ripgrep
+  stow
+  tmux
+  universal-ctags
+  uv
+  vim
+  zsh-syntax-highlighting
+)
+
+casks=(
+  font-source-code-pro
+)
+
+brew update
+brew install "${formulae[@]}"
+brew install --cask "${casks[@]}"

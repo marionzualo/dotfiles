@@ -5,11 +5,11 @@ atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
 *.swp
-git/.gitc/.gitconfig_machine
+git/dot-gitc/dot-gitconfig_machine
 .netrwhist
 *.log
 *.apmrc
 *.swo
 *.swn
-vim/.vim/plugged/
-zsh/.zsh/local.zsh
+vim/dot-vim/plugged/
+zsh/dot-zsh/local.zsh

@@ -7,7 +7,7 @@
   count   = !git shortlog -sn
   dl      = ~/.gitc/git-up
   sla     = log --oneline --decorate --graph --all -20
-  pf      =  push -f origin ri      = rebase -i
+  pf      = push -f origin
   r       = rebase
   c       = commit
   s       = status -sb
@@ -26,13 +26,11 @@
   sl = log --oneline --decorate --graph -20
   upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
   df = diff --word-diff --color-words
-  browse = !hub browse
-  compare = !hub compare
-  ci-status = !hub ci-status
+  browse = !gh repo view --web
+  ci-status = !gh pr checks
   master = checkout master
   plr = pull --rebase
   mup = !git checkout master && git pull && git checkout - # update master and go back to the current brach
-  master = checkout master
   last = checkout -
   nb = checkout -b
   dlb = branch -D # delete local branch
@@ -83,10 +81,3 @@
 [commit]
   template = ~/.gitc/.gitmessage
   cleanup = strip
-[gitsh]
-	noGreeting = true
-	defaultCommand = status --short --branch
-[gitsh "color"]
-	default = cyan
-	untracked = yellow
-	modified = red

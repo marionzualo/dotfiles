@@ -1,0 +1,21 @@
+# .zshrc is for interactive shell behavior, but it also sources the shared
+# environment so non-login interactive shells get the same PATH and locale.
+if [[ -r ~/.zsh/environment.zsh ]]; then
+  source ~/.zsh/environment.zsh
+fi
+
+# Load each interactive module from ~/.zsh, except environment.zsh because it
+# was loaded explicitly above and must be safe to share with .zprofile.
+for config in ~/.zsh/*.zsh(N); do
+  [[ "$config" == "$HOME/.zsh/environment.zsh" ]] && continue
+  source "$config"
+done
+
+# Tool hooks that depend on the final interactive shell state live here.
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
+fi
+
+if [[ -r "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]]; then
+  source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi
